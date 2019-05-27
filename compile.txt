@@ -1,0 +1,4 @@
+gcc -c Flash_FS.c -o f.o -lm
+ar -r libFS.a f.o
+ranlib libFS.a
+gcc main.c -L. -lFS -lm -o FS
